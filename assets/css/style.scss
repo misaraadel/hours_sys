@@ -1,0 +1,43 @@
+@import 'global';
+@import 'animations';
+
+/*navbar file*/
+@import 'navbar';
+
+.main-content {
+  width: 100%;
+  padding-top: 130px;
+  padding-bottom: 40px !important;
+
+  &.active-main {
+    padding-inline-start: 130px !important;
+  }
+
+  .head-contain {
+    width: 100%;
+    margin: 0px 0px 32px;
+
+    .page-title {
+      color: #313131;
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0px
+    }
+
+    .desc {
+      font-size: 15px;
+      font-weight: 500;
+      color: #B0B0B0;
+      margin: 10px 0px 0px;
+    }
+  }
+}
+
+
+@import 'parts';
+
+@import 'form';
+
+
+/*media file*/
+@import 'media';

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="....">
+    <meta name="author" content="misara adel">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+      Hours System
+    </title>
+    <link rel="shortcut icon" href="assets/images/navbar/logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="assets/css/lib/all.min.css">
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/lib/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/lib/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <!--appear in mobile only-->
+
+        <div class="content">
+          <div class="logo-contain">
+            <div class="toggler">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <img class="logo-img" src="assets/images/navbar/logo.png" alt="">
+          </div>
+
+          <div class="name">
+            <p class="welcome-msg">
+              Welcome Back ,,
+            </p>
+
+            <h1 class="user-name">
+              Dashboard
+            </h1>
+          </div>
+
+          <div class="user-data d-none">
+            <a type="button" href="#" class="search-icon"  data-toggle="modal" data-target="#SearchModal">
+              <img src="assets/images/navbar/search.svg" alt="">
+            </a>
+
+            <a href="#" class="notifcation-icon">
+              <img src="assets/images/navbar/notification.svg" alt="">
+
+              <span>
+                3
+              </span>
+            </a>
+
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/navbar/user.png" alt="">
+
+                <div class="drop-contain">
+                  <p class="drop-user-name">
+                    Mazen Mahmoud
+                  </p>
+
+                  <p class="drop-user-position">
+                    مدير النظام
+                  </p>
+                </div>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="side-nav d-none">
+      <div class="logo-contain">
+        <img class="logo-img" src="assets/images/navbar/logo.png" alt="">
+
+        <img class="logo-icon" src="assets/images/navbar/logo.png" alt="">
+
+        <div class="toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      
+      <!--appear in mobile only-->
+      <div class="name">
+        <p class="welcome-msg">
+          Welcome Back ,,
+        </p>
+
+        <h1 class="user-name">
+          Dashboard
+        </h1>
+      </div>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <img src="assets/images/navbar/home.svg" alt="">
+
+            <span>
+              Dashboard
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <img src="assets/images/navbar/document_text.svg" alt="">
+
+            <span>
+              Transcript
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <img src="assets/images/navbar/hashtag.svg" alt="">
+
+            <span>
+              Study Timetable
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <img src="assets/images/navbar/receipt.svg" alt="">
+
+            <span>
+              Exam Timetable
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <img src="assets/images/navbar/task_square.svg" alt="">
+
+            <span>
+              Absence Sheet
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <img src="assets/images/navbar/note.svg" alt="">
+
+            <span>
+              Questionnaire
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <img src="assets/images/navbar/book.svg" alt="">
+
+            <span>
+              Subject Results
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <img src="assets/images/navbar/receipt_item.svg" alt="">
+
+            <span>
+              Unpaid Inovices
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <img src="assets/images/navbar/keyboard_open.svg" alt="">
+
+            <span>
+              Progress
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!--search modal in mobile-->
+    <div class="modal fade" id="SearchModal" tabindex="-1" aria-labelledby="SearchModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-body search-modal-body">
+            <form class="form-contain">
+              <div class="form-group">
+                <img class="search-icon" src="assets/images/navbar/search.svg" alt="">
+  
+                <input type="text" class="form-control" placeholder="بحث في النظام التعليمي ..." />
+  
+                <button class="filter-search">
+                  <img src="assets/images/navbar/filter.svg" alt="">
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="main-content">
+      <div class="container">
+        <div class="heading">
+          <div class="head-contain">
+            <h1 class="page-title">
+              Services Questionnaire
+            </h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="part-box padding-part">
+              <form class="form-contain">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="question">
+                      <p class="data">
+                        The course has clear and stated objectives?
+                      </p>
+
+                      <div class="flex-data">
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            1
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            2
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            3
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            4
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            5
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="question">
+                      <p class="data">
+                        The course has clear and stated objectives?
+                      </p>
+
+                      <div class="flex-data">
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            1
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            2
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            3
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            4
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            5
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="question">
+                      <p class="data">
+                        The course has clear and stated objectives?
+                      </p>
+
+                      <div class="flex-data">
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            1
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            2
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            3
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            4
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            5
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="question">
+                      <p class="data">
+                        The course has clear and stated objectives?
+                      </p>
+
+                      <div class="flex-data">
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            1
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            2
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            3
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            4
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            5
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="question">
+                      <p class="data">
+                        The course has clear and stated objectives?
+                      </p>
+
+                      <div class="flex-data">
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            1
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            2
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            3
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            4
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            5
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="question">
+                      <p class="data">
+                        The course has clear and stated objectives?
+                      </p>
+
+                      <div class="flex-data">
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            1
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            2
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            3
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            4
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+
+                        <div class="wrapper">
+                          <label class="radio-title" for="radioCheck">
+                            5
+                          </label>
+
+                          <input type="radio" class="radio-check squre-check" id="radioCheck"/>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <div class="form-group">
+                      <label for="">
+                        Add Comment
+                      </label>
+
+                      <textarea name="" class="form-control text-area" placeholder="Write Here ..." id="" cols="30" rows="10"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="buttons-contain">
+              <a href="#" class="btn-submit">
+                Submit
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/lib/jquery4.js"></script>
+    <script src="assets/js/lib/popper.js"></script>
+    <script src="assets/js/lib/bootstrap.js"></script>
+    <script src="assets/js/lib/owl.carousel.min.js"></script>
+    <script src="assets/js/lib/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html> 

@@ -1,0 +1,118 @@
+@media (max-width: 999px) {
+  .login .form-contain, .modal-body.part-modal-body, .school-modal .modal-body.part-modal-body {
+    padding: 50px 20px !important;
+  }
+
+  .navbar {
+    width: 100% !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 997;
+    
+    .content {
+      .logo-contain, .search-icon {
+        display: flex !important;
+      }
+
+      .name, .form-contain, .nav-item.dropdown .dropdown-toggle::after , .nav-item.dropdown .drop-contain {
+        display: none;
+      }
+
+      .user-data .nav-item.dropdown .dropdown-toggle {
+        padding: 0px !important;
+
+        img {
+          margin-inline-end: 0px !important;
+        }
+      }
+    }
+  }
+
+  .side-nav {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: -100%;
+    z-index: 996;
+    padding-bottom: 150px !important;
+    transition: all .3s linear;
+
+    &::after {
+      opacity: .5;
+    }
+
+    .logo-contain {
+      display: none !important;
+    }
+
+    .name {
+      display: block !important;
+    }
+
+    .navbar-nav .nav-item {
+      .nav-link {
+        justify-content: flex-start !important;
+
+        span {
+          display: block !important;
+        }
+
+        &::before {
+          display: block !important;
+        }  
+      }
+    }
+
+    &.acitve-nav {
+      width: 100% !important;
+      left: 0px !important;
+
+      .navbar-nav .nav-item {
+        .nav-link {
+          justify-content: flex-start !important;
+  
+          span {
+            display: block !important;
+          }
+
+          &::before {
+            display: block !important;
+          } 
+        }
+      }
+    }
+  }
+
+  .main-content, &.active-main {
+    padding: 120px 0px 40px !important;
+  }
+
+  .main-content {
+    .heading {
+      flex-direction: column !important;
+      align-items: flex-start !important;
+      align-content: flex-start !important;
+      justify-content: flex-start !important;
+
+      .head-contain {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .part-box {
+    .question {
+      flex-direction: column !important;
+
+      p {
+        font-size: 14px !important;
+        margin-bottom: 15px !important;
+      }
+    }
+
+    &.padding-part {
+      padding: 10px 10px !important;
+    }
+  }
+}
