@@ -2378,6 +2378,11 @@ ul {
   color: #fff;
 }
 
+.courses-nav li a.complete {
+  background-color: rgba(27, 192, 215, 0.1);
+  color: #1BC0D7;
+}
+
 .nav.nav-tabs {
   width: 100%;
   border: 0px;

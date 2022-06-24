@@ -240,6 +240,11 @@
         background-color: #B88B1A;
         color: #fff;
       }
+
+      &.complete {
+        background-color: rgba($color: #1BC0D7, $alpha: 0.10);
+        color: #1BC0D7;
+      }
     }
   }
 }
