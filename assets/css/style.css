@@ -2763,6 +2763,10 @@ ul {
   margin: auto !important;
 }
 
+.table-responsive td .type {
+  margin: auto !important;
+}
+
 #columnchart_material, #chart_div {
   width: 80%;
   height: 500px;
@@ -3122,6 +3126,9 @@ ul {
   .table-responsive td {
     font-size: 13px !important;
   }
+  .table-responsive td .type {
+    font-size: 12px !important;
+  }
   .part-box .content .flex-data,
   .part-box .content .flex-data.flex-start {
     -ms-flex-wrap: wrap !important;
@@ -3143,6 +3150,13 @@ ul {
     width: 100% !important;
     height: 300px !important;
     padding: 0px 20px;
+  }
+  .part-box .content .type {
+    padding: 10px 18px !important;
+    height: 44px;
+  }
+  .part-box .content .type span {
+    font-size: 13px !important;
   }
 }
 /*# sourceMappingURL=style.css.map */

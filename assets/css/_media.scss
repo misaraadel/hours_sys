@@ -123,6 +123,10 @@
 
     td {
       font-size: 13px !important;
+
+      .type {
+        font-size: 12px !important;
+      }
     }
   }
 
@@ -148,5 +152,14 @@
     width: 100% !important;
     height: 300px !important;
     padding: 0px 20px;
+  }
+
+  .part-box .content .type {
+    padding: 10px 18px !important;
+    height: 44px;
+
+    span {
+      font-size: 13px !important;
+    }
   }
 }
