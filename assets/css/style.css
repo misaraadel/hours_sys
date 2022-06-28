@@ -2763,6 +2763,16 @@ ul {
   margin: auto !important;
 }
 
+#columnchart_material, #chart_div {
+  width: 80%;
+  height: 500px;
+  margin: auto;
+}
+
+#chart_div {
+  width: 100% !important;
+}
+
 .form-contain {
   width: 100%;
 }
@@ -3128,6 +3138,11 @@ ul {
   }
   .band-img {
     height: 250px !important;
+  }
+  #columnchart_material, #chart_div {
+    width: 100% !important;
+    height: 300px !important;
+    padding: 0px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
