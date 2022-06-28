@@ -13,24 +13,63 @@
     padding-inline-start: 130px !important;
   }
 
-  .head-contain {
-    width: 100%;
-    margin: 0px 0px 32px;
+  
 
-    .page-title {
-      color: #313131;
-      font-size: 20px;
-      font-weight: 700;
-      margin: 0px
+  .heading {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+
+    .head-contain {
+      width: 100%;
+      margin: 0px 0px 32px;
+  
+      .page-title {
+        color: #313131;
+        font-size: 20px;
+        font-weight: 700;
+        margin: 0px
+      }
+  
+      .desc {
+        font-size: 15px;
+        font-weight: 500;
+        color: #B0B0B0;
+        margin: 10px 0px 0px;
+      }
     }
 
-    .desc {
-      font-size: 15px;
-      font-weight: 500;
-      color: #B0B0B0;
-      margin: 10px 0px 0px;
+    .page {
+      display: flex;
+      align-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      
+      span {
+        color: #2A2459;
+        font-size: 20px;
+        font-weight: 500;
+        min-width: 160px !important;
+      }
+
+      img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain;
+      }
+
+      &:hover {
+        span {
+          color: #B88B1A;
+        }
+
+        img {
+          animation: tada .3s linear
+        }
+      }
     }
-  }
+  } 
 }
 
 

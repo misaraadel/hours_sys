@@ -115,4 +115,32 @@
       padding: 10px 10px !important;
     }
   }
+
+  .table-responsive {
+    th , td {
+      min-width: 150px !important;
+    }
+
+    td {
+      font-size: 13px !important;
+    }
+  }
+
+  .part-box .content .flex-data,
+  .part-box .content .flex-data.flex-start {
+    flex-wrap: wrap !important;
+
+    .list {
+      margin-right: 14px !important;
+      margin-bottom: 10px !important;
+    }
+
+    .degree-contain {
+      margin-bottom: 15px !important;
+    }
+  }
+
+  .band-img {
+    height: 250px !important;
+  }
 }

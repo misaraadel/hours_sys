@@ -104,4 +104,8 @@ $(document).ready(function () {
             }
         }
     });
+
+    $('.filter').click(function(){
+        $('.filter-contain').toggleClass('active-filter');
+    });
 });
