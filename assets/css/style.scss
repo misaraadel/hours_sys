@@ -7,13 +7,12 @@
 .main-content {
   width: 100%;
   padding-top: 130px;
+  padding-inline-start: 310px;
   padding-bottom: 40px !important;
 
   &.active-main {
     padding-inline-start: 130px !important;
   }
-
-  
 
   .heading {
     display: flex;

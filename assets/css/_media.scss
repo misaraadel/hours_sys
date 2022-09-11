@@ -31,7 +31,7 @@
 
   .side-nav {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 100px;
     left: -100%;
     z-index: 996;
@@ -84,7 +84,7 @@
     }
   }
 
-  .main-content, &.active-main {
+  .main-content, .active-main {
     padding: 120px 0px 40px !important;
   }
 
@@ -160,6 +160,12 @@
 
     span {
       font-size: 13px !important;
+    }
+  }
+
+  .navbar {
+    .toggler {
+      display: flex !important;
     }
   }
 }
