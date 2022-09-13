@@ -214,7 +214,7 @@
 
         <div class="row">
           <div class="col-lg-3 col-12 mb-4">
-            <div class="part-box hover-box">
+            <div class="part-box hover-box blocked-box">
               <div class="content">
                 <div class="flex-data between mb-3">
                   <div class="type gold">
@@ -223,7 +223,7 @@
                     </span>
                   </div>
 
-                  <a href="#" class="arrow" type="button" data-toggle="modal" data-target="#ViewTranscriptModal">
+                  <a href="#" class="arrow" type="button" data-toggle="modal" data-target="#BlockedModal">
                     <img src="assets/images/dashboard/arrow_square_right.svg" alt="">
                   </a>
                 </div>
@@ -238,7 +238,7 @@
                   </span>
                 </div>
 
-                <div class="flex-data flex-start">
+                <div class="blocked-data flex-data flex-start">
                   <div class="list mr-3">
                     <a href="#">
                       <img src="assets/images/dashboard/calculator.svg" alt="">
@@ -269,6 +269,12 @@
                         </span>
                       </div>
                     </a>
+                  </div>
+
+                  <div class="blocked">
+                    <h1>
+                      test text 
+                    </h1>
                   </div>
                 </div>
               </div>
@@ -950,6 +956,53 @@
                   </tbody>
                 </table>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--blocked modal-->
+    <div class="modal fade" id="BlockedModal" tabindex="-1" aria-labelledby="BlockedModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body part-box">
+            <div class="content">
+              <div class="flex-data between">
+                <h1>
+                  you are blocked now 
+                </h1>
+
+                <a href="#" class="arrow" data-dismiss="modal">
+                  <img src="assets/images/dashboard/close_square.svg" alt="">
+                </a>
+              </div>
+
+              <ul class="block-list">
+                <li>
+                  <h2 class="reason">
+                    reason :
+                  </h2>
+
+                  <ul class="sub-block-list">
+                    <li>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting
+                    </li>
+
+                    <li>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting
+                    </li>
+
+                    <li>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting
+                    </li>
+
+                    <li>
+                      Lorem Ipsum is simply dummy text of the printing and typesetting
+                    </li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
         </div>

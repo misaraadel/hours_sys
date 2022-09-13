@@ -3,6 +3,8 @@
   background-color: #fff;
   border-radius: 6px;
   overflow: hidden;
+  position: relative;
+  z-index: 9;
 
   &.hover-box {
     transition: all .3s linear;
@@ -14,6 +16,36 @@
 
   &.padding-part {
     padding: 30px;
+  }
+
+  &.blocked-box {
+    box-shadow: 0px 0px 10px rgba($color: #FD0C0C, $alpha: 0.2);
+  }
+
+  .blocked-data {
+    position: relative;
+
+
+    .blocked {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      border-radius: 10px;
+      background-color: #FD0C0C;
+
+      h1 {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 900;
+        margin: 0px;
+      }
+    }
   }
 
   .questionnaire-data-contain {
@@ -422,32 +454,15 @@
   align-items: center;
   align-content: center;
   justify-content: flex-start;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-  overflow-y: hidden;
-  margin-bottom: 35px;
-  padding-bottom: 10px;
-
-  &::-webkit-scrollbar-track  {
-    background: transparent !important;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: #B88B1A;
-    width: 100px !important;
-  }
-
-  &::-webkit-scrollbar {
-    height: 10px !important;
-    width: 100px !important;
-  }
+  flex-wrap: wrap;
 
   li {
     margin-inline-end: 10px;
+    margin-bottom: 10px;
 
     a {
       padding: 16px 13px;
-      min-width: 250px !important;
+      min-width: 130px !important;
       display: flex;
       align-items: center;
       align-content: center;
@@ -794,4 +809,69 @@
 
 #chart_div {
   width: 100% !important; 
+}
+
+.block-list {
+  width: 100%;
+  margin-top: 15px;
+  padding-top: 25px;
+  border-top: 1px solid #ddd;
+  
+
+  li {
+    width: 100%;
+    margin-bottom: 20px;
+
+    .reason {
+      color: #000;
+      text-transform: capitalize;
+      position: relative;
+      padding-inline-start: 30px;
+      margin: 0px;
+      font-size: 18px;
+      font-weight: 900;
+      margin-bottom: 20px;
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        background: url('../images/red_arrow.svg') center / contain no-repeat;
+        top: calc(50% - 12px);
+        left: 0px;
+        z-index: -1;
+      }
+    }
+
+    .sub-block-list {
+      padding-inline-start: 30px;
+      width: 100%;
+
+      li {
+        width: 100%;
+        margin-bottom: 15px;
+        padding-inline-start: 30px;
+        position: relative;
+        z-index: 9;
+        color: #555;
+        font-size: 14px;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          background: url('../images/danger_data.svg') center / contain no-repeat;
+          top: calc(50% - 12px);
+          left: 0px;
+          z-index: -1;
+        }
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
 }
