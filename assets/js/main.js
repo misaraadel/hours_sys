@@ -1,8 +1,5 @@
 $(document).ready(function () {
-    window.addEventListener("load", function () {
-        const loader = document.querySelector(".loader");
-        loader.className += " hidden";
-    });
+    $('.loading-page').fadeOut(4000);
 
     $(window).scroll(function () {
         if ($(this).scrollTop() > 700) {
