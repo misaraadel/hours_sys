@@ -1,5 +1,5 @@
 
-<p align="center"><a href="https://new.horus.edu.eg/" target="_blank"><img src="https://misaraadel.github.io/hours_sys/assets/images/navbar/logo.png" width="400"></a></p>
+<p align="center"><a href="https://new.horus.edu.eg/" target="_blank"><img src="https://new.horus.edu.eg/wp-content/uploads/2020/09/logo-1.png" width="400"></a></p>
 
 Design Made by [Misara Hammed](https://github.com/misaraadel) for [technoraft](https://technoraft.com/)
 
