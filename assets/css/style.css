@@ -1849,7 +1849,7 @@ ul {
   text-transform: capitalize;
 }
 .table-responsive th.lecture {
-  min-width: 245px !important;
+  min-width: 400px !important;
 }
 .table-responsive th.filter {
   cursor: pointer;
