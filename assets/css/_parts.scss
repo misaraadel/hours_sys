@@ -569,6 +569,7 @@
   }
 }
 
+
 .courses-nav {
   width: 100%;
   display: flex;
@@ -738,6 +739,11 @@
     color: #2A2459;
     font-size: 16px;
     font-weight: 900;
+    text-transform: capitalize;
+
+    &.lecture {
+      min-width: 245px !important;
+    }
 
     &.filter {
       cursor: pointer;
@@ -869,6 +875,21 @@
     color: #000000;
     font-size: 15px;
     font-weight: 500;
+
+    .flex-contain {
+      gap: 8px;
+      flex-wrap: wrap;
+      padding: 10px 0px !important;
+      justify-content: flex-start !important;
+      .type {
+        width: fit-content;
+        margin: 0px !important;
+
+        span {
+          font-size: 13px;
+        }
+      }
+    }
 
     .name {
       width: 100%;

@@ -1846,6 +1846,10 @@ ul {
   color: #2A2459;
   font-size: 16px;
   font-weight: 900;
+  text-transform: capitalize;
+}
+.table-responsive th.lecture {
+  min-width: 245px !important;
 }
 .table-responsive th.filter {
   cursor: pointer;
@@ -1966,6 +1970,20 @@ ul {
   color: #000000;
   font-size: 15px;
   font-weight: 500;
+}
+.table-responsive td .flex-contain {
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 10px 0px !important;
+  justify-content: flex-start !important;
+}
+.table-responsive td .flex-contain .type {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0px !important;
+}
+.table-responsive td .flex-contain .type span {
+  font-size: 13px;
 }
 .table-responsive td .name {
   width: 100%;
