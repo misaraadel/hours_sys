@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="....">
+    <meta name="author" content="misara adel">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>
+      Hours System
+    </title>
+    <link rel="shortcut icon" href="assets/images/navbar/logo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="assets/css/lib/all.min.css">
+    <link rel="stylesheet" href="assets/css/lib/animate.css">
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/lib/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/lib/owl.theme.default.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+      .buttons-contain .btn-submit.red-color::after, .buttons-contain .btn-submit.red-color::before {
+        background-color: #FD0C0C;
+      }
+      .buttons-contain .btn-submit.red-color:hover {
+        border-color: #FD0C0C;
+        color: #FD0C0C;
+      }
+
+      .tabs-contain {
+        width: 100%;
+        padding: 10px 0px;
+        padding-inline-start: 10px;
+      }
+      .tabs-contain .course-details {
+        width: 100%;
+        padding: 15px 15px;
+        background-color: rgba(184, 139, 26, 0.05);
+        border-radius: 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        position: relative;
+        z-index: 9;
+      }
+      .tabs-contain .course-details::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        background-color: #ddd;
+        bottom: -10px;
+        left: 0;
+        z-index: -1;
+      }
+      .tabs-contain .course-details.done {
+        background-color: #509D14;
+      }
+      .tabs-contain .course-details.done p, .tabs-contain .course-details.done b {
+        color: #fff;
+      }
+      .tabs-contain .course-details.done .list a {
+        background-color: #fff;
+      }
+      .tabs-contain .course-details.wait {
+        background-color: #B88B1A;
+      }
+      .tabs-contain .course-details.wait p, .tabs-contain .course-details.wait b {
+        color: #fff;
+      }
+      .tabs-contain .course-details.wait .list a {
+        background-color: #fff;
+      }
+      .tabs-contain .course-details p {
+        color: #000;
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 10px;
+      }
+      .tabs-contain .course-details b {
+        color: #000;
+        font-size: 15px;
+        font-weight: 900;
+        margin-bottom: 10px;
+        display: block;
+      }
+      .tabs-contain .course-details .flex-data {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: flex-start;
+        gap: 8px;
+        flex-wrap: wrap;
+      }
+      .tabs-contain .course-details .list a {
+        display: flex;
+        align-content: center;
+        padding: 4px 7px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+        gap: 3px;
+        align-items: center;
+        justify-content: center;
+        width: -moz-fit-content;
+        width: fit-content;
+      }
+      .tabs-contain .course-details .list a img {
+        width: 20px;
+        height: 20px;
+        -o-object-fit: contain;
+          object-fit: contain;
+      }
+      .tabs-contain .course-details .list a span {
+        color: #B88B1A;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .tabs-contain .course-details:last-child::after {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <!--appear in mobile only-->
+
+        <div class="content">
+          <div class="toggler">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="logo-contain">
+            <img class="logo-img" src="assets/images/navbar/logo.png" alt="">
+          </div>
+
+          <div class="name">
+            <p class="welcome-msg">
+              Welcome Back ,,
+            </p>
+
+            <h1 class="user-name">
+              Dashboard
+            </h1>
+          </div>
+
+          <div class="user-data d-none">
+            <a type="button" href="#" class="search-icon"  data-toggle="modal" data-target="#SearchModal">
+              <img src="assets/images/navbar/search.svg" alt="">
+            </a>
+
+            <a href="#" class="notifcation-icon">
+              <img src="assets/images/navbar/notification.svg" alt="">
+
+              <span>
+                3
+              </span>
+            </a>
+          </div>
+
+          <div class="user-data">
+            <div class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="assets/images/navbar/user.png" alt="">
+
+                <div class="drop-contain">
+                  <p class="drop-user-name">
+                    Mazen Mahmoud
+                  </p>
+
+                  <p class="drop-user-position">
+                    4781@horus.edu.org
+                  </p>
+                </div>
+              </a>
+
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">
+                  <img src="assets/images/navbar/logout.svg" alt="">
+
+                  <span>
+                    Logout
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="side-nav">
+      <div class="logo-contain">
+        <img class="logo-img" src="assets/images/navbar/logo.png" alt="">
+
+        <img class="logo-icon" src="assets/images/navbar/logo.png" alt="">
+
+        <div class="toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <!--appear in mobile only-->
+      <div class="name">
+        <p class="welcome-msg">
+          Welcome Back ,,
+        </p>
+
+        <h1 class="user-name">
+          Dashboard
+        </h1>
+      </div>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">
+            <img src="assets/images/navbar/home.svg" alt="">
+
+            <span>
+              Dashboard
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="transcript.html" class="nav-link">
+            <img src="assets/images/navbar/document_text.svg" alt="">
+
+            <span>
+              Transcript
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="study-timetable.html" class="nav-link">
+            <img src="assets/images/navbar/hashtag.svg" alt="">
+
+            <span>
+              Study Timetable
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="exam-timetable.html" class="nav-link">
+            <img src="assets/images/navbar/receipt.svg" alt="">
+
+            <span>
+              Exam Timetable
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="absence-sheet.html" class="nav-link">
+            <img src="assets/images/navbar/task_square.svg" alt="">
+
+            <span>
+              Absence Sheet
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="questionnaire.html" class="nav-link">
+            <img src="assets/images/navbar/note.svg" alt="">
+
+            <span>
+              Questionnaire
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="subject-results.html" class="nav-link">
+            <img src="assets/images/navbar/book.svg" alt="">
+
+            <span>
+              Subject Results
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="unpaid-inovices.html" class="nav-link">
+            <img src="assets/images/navbar/receipt_item.svg" alt="">
+            <span>
+              Unpaid Inovices
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="progress.html" class="nav-link">
+            <img src="assets/images/navbar/keyboard_open.svg" alt="">
+
+            <span>
+              Progress
+            </span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="student-portal.html" class="nav-link">
+            <img src="assets/images/navbar/hashtag.svg" alt="">
+
+            <span>
+             student portal
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <main class="main-content">
+      <div class="container-fluid">
+        <div class="heading">
+          <div class="head-contain">
+            <h1 class="page-title">
+              Registration
+            </h1>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 mb-4">
+            <div class="part-box">
+              <div class="content">
+                <div class="row">
+                  <div class="col-lg-3 col-md-4 col-6 mb-3">
+                    <div class="list">
+                      <a href="#">
+                        <img src="assets/images/dashboard/chart_square.svg" alt="" />
+  
+                        <div class="contain">
+                          <span class="name">
+                            name
+                          </span>
+  
+                          <span class="title">
+                            Ahmed Elsayed
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-6 mb-3">
+                    <div class="list">
+                      <a href="#">
+                        <img src="assets/images/dashboard/bank.svg" alt="" />
+  
+                        <div class="contain">
+                          <span class="name">
+                            code
+                          </span>
+  
+                          <span class="title">
+                            321312
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-6 mb-3">
+                    <div class="list">
+                      <a href="#">
+                        <img src="assets/images/dashboard/chart_square.svg" alt="" />
+  
+                        <div class="contain">
+                          <span class="name">
+                            Level
+                          </span>
+  
+                          <span class="title">
+                            Level 5
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-6 mb-3">
+                    <div class="list">
+                      <a href="#">
+                        <img src="assets/images/dashboard/chart_square.svg" alt="" />
+  
+                        <div class="contain">
+                          <span class="name">
+                            GPA
+                          </span>
+  
+                          <span class="title">
+                            2.17
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-6 mb-3">
+                    <div class="list">
+                      <a href="#">
+                        <img src="assets/images/dashboard/clock.svg" alt="" />
+  
+                        <div class="contain">
+                          <span class="name">
+                            Electtive Hours
+                          </span>
+  
+                          <span class="title">
+                            166
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-6 mb-3">
+                    <div class="list">
+                      <a href="#">
+                        <img src="assets/images/dashboard/tick_circle.svg" alt="" />
+  
+                        <div class="contain">
+                          <span class="name">
+                            Earned Hours
+                          </span>
+  
+                          <span class="title">
+                            145
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-6 mb-3">
+                    <div class="list">
+                      <a href="#">
+                        <img src="assets/images/dashboard/timer_start.svg" alt="" />
+  
+                        <div class="contain">
+                          <span class="name">
+                            Max Hours
+                          </span>
+  
+                          <span class="title">
+                            21
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-6 mb-3">
+                    <div class="list">
+                      <a href="#">
+                        <img src="assets/images/dashboard/clock.svg" alt="" />
+  
+                        <div class="contain">
+                          <span class="name">
+                            Project Hours
+                          </span>
+  
+                          <span class="title">
+                            166
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-6 mb-3">
+                    <div class="list">
+                      <a href="#">
+                        <img src="assets/images/dashboard/timer_start.svg" alt="" />
+  
+                        <div class="contain">
+                          <span class="name">
+                            Project Hours
+                          </span>
+  
+                          <span class="title">
+                            166
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-6 mb-3">
+                    <div class="list">
+                      <a href="#">
+                        <img src="assets/images/dashboard/tick_circle.svg" alt="" />
+  
+                        <div class="contain">
+                          <span class="name">
+                            Registered Hours
+                          </span>
+  
+                          <span class="title">
+                            145
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-6 mb-3">
+                    <div class="list">
+                      <a href="#">
+                        <img src="assets/images/dashboard/red_clock.svg" alt="" />
+  
+                        <div class="contain">
+                          <span class="name">
+                            Min Hours
+                          </span>
+  
+                          <span class="title">
+                            145
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-4 col-6 mb-3">
+                    <div class="list">
+                      <a href="#">
+                        <img src="assets/images/dashboard/calculator.svg" alt="" />
+  
+                        <div class="contain">
+                          <span class="name">
+                            Total Hours
+                          </span>
+  
+                          <span class="title">
+                            166
+                          </span>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 mb-3">
+            <div class="part-box">
+              <div class="row">
+                <div class="col-lg-3 col-12 mb-4 pr-0">
+                  <div class="tabs-contain">
+                    <div class="course-details">
+                      <p>
+                        EPE 111
+                      </p>
+
+                      <b>
+                        Electrical course
+                      </b>
+
+                      <div class="flex-data">
+                        <div class="list">
+                          <a href="#">
+                            <img src="assets/images/dashboard/chart_square.svg" alt="" />
+      
+                            <span class="title">
+                              Level 5
+                            </span>
+                          </a>
+                        </div>
+
+                        <div class="list">
+                          <a href="#">
+                            <img src="assets/images/dashboard/tick_circle.svg" alt="" />
+      
+                            <span>
+                              Ch : 5
+                            </span>
+                          </a>
+                        </div>
+
+                        <div class="list">
+                          <a href="#">
+                            <img src="assets/images/dashboard/chart_square.svg" alt="" />
+      
+                            <span class="name">
+                              type : core
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="course-details done">
+                      <p>
+                        EPE 111
+                      </p>
+
+                      <b>
+                        Electrical course
+                      </b>
+
+                      <div class="flex-data">
+                        <div class="list">
+                          <a href="#">
+                            <img src="assets/images/dashboard/chart_square.svg" alt="" />
+      
+                            <span class="title">
+                              Level 5
+                            </span>
+                          </a>
+                        </div>
+
+                        <div class="list">
+                          <a href="#">
+                            <img src="assets/images/dashboard/tick_circle.svg" alt="" />
+      
+                            <span>
+                              Ch : 5
+                            </span>
+                          </a>
+                        </div>
+
+                        <div class="list">
+                          <a href="#">
+                            <img src="assets/images/dashboard/chart_square.svg" alt="" />
+      
+                            <span class="name">
+                              type : core
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="course-details wait">
+                      <p>
+                        EPE 111
+                      </p>
+
+                      <b>
+                        Electrical course
+                      </b>
+
+                      <div class="flex-data">
+                        <div class="list">
+                          <a href="#">
+                            <img src="assets/images/dashboard/chart_square.svg" alt="" />
+      
+                            <span class="title">
+                              Level 5
+                            </span>
+                          </a>
+                        </div>
+
+                        <div class="list">
+                          <a href="#">
+                            <img src="assets/images/dashboard/tick_circle.svg" alt="" />
+      
+                            <span>
+                              Ch : 5
+                            </span>
+                          </a>
+                        </div>
+
+                        <div class="list">
+                          <a href="#">
+                            <img src="assets/images/dashboard/chart_square.svg" alt="" />
+      
+                            <span class="name">
+                              type : core
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="course-details">
+                      <p>
+                        EPE 111
+                      </p>
+
+                      <b>
+                        Electrical course
+                      </b>
+
+                      <div class="flex-data">
+                        <div class="list">
+                          <a href="#">
+                            <img src="assets/images/dashboard/chart_square.svg" alt="" />
+      
+                            <span class="title">
+                              Level 5
+                            </span>
+                          </a>
+                        </div>
+
+                        <div class="list">
+                          <a href="#">
+                            <img src="assets/images/dashboard/tick_circle.svg" alt="" />
+      
+                            <span>
+                              Ch : 5
+                            </span>
+                          </a>
+                        </div>
+
+                        <div class="list">
+                          <a href="#">
+                            <img src="assets/images/dashboard/chart_square.svg" alt="" />
+      
+                            <span class="name">
+                              type : core
+                            </span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-9 col-12 mb-4">
+                  <div class="content form-contain">
+                    <div class="table-responsive">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>
+                              check
+                            </th>
+
+                            <th>
+                              avaliable
+                            </th>
+        
+                            <th>
+                              Day
+                            </th>
+        
+                            <th>
+                              From time
+                            </th>
+        
+                            <th>
+                              To time 
+                            </th>
+        
+                            <th>
+                              Type
+                            </th>
+                            
+                            <th>
+                              group 
+                            </th>
+        
+                            <th>
+                              facility 
+                            </th>
+
+                            <th>
+                              intructor
+                            </th>
+
+                            <th>
+                              status
+                            </th>
+                          </tr>
+                        </thead>
+        
+                        <tbody>
+                          <tr class="gold">
+                            <td>
+                              <div class="flex-data">
+                                <div class="wrapper mx-auto">
+                                  <input type="radio" class="radio-check squre-check mx-0" id="radioCheck"/>
+                                </div>
+                              </div>
+                            </td>
+        
+                            <td>
+                              25
+                            </td>
+    
+                            <td>
+                             sunday
+                            </td>
+        
+                            <td>
+                              <span class="data gold-color">
+                                12:45
+                              </span>
+                            </td>
+        
+                            <td>
+                              <span class="data gold-color">
+                                12:45
+                              </span>
+                            </td>
+        
+                            <td>
+                              <div class="type gold">
+                                <img src="assets/images/dashboard/folder.svg" alt="">
+    
+                                <span>
+                                  Lecture
+                                </span>
+                              </div>
+                            </td>
+        
+                            <td>
+                              <div class="type blue">
+                                <img src="assets/images/dashboard/align_top.svg" alt="">
+    
+                                <span>
+                                  A1
+                                </span>
+                              </div>
+                            </td>
+        
+                            <td>
+                              <div class="type move">
+                                <img src="assets/images/dashboard/location.svg" alt="">
+    
+                                <span>
+                                  E213
+                                </span>
+                              </div>
+                            </td>
+
+                            <td>
+                              ahmed elsayed
+                            </td>
+
+                            <td>
+                              --
+                            </td>
+                          </tr>
+        
+                          <tr>
+                            <td>
+                              <div class="flex-data">
+                                <div class="wrapper mx-auto">
+                                  <input type="radio" class="radio-check squre-check mx-0" id="radioCheck"/>
+                                </div>
+                              </div>
+                            </td>
+        
+                            <td>
+                              25
+                            </td>
+    
+                            <td>
+                             sunday
+                            </td>
+        
+                            <td>
+                              <span class="data gold-color">
+                                12:45
+                              </span>
+                            </td>
+        
+                            <td>
+                              <span class="data gold-color">
+                                12:45
+                              </span>
+                            </td>
+        
+                            <td>
+                              <div class="type gold">
+                                <img src="assets/images/dashboard/folder.svg" alt="">
+    
+                                <span>
+                                  Lecture
+                                </span>
+                              </div>
+                            </td>
+        
+                            <td>
+                              <div class="type blue">
+                                <img src="assets/images/dashboard/align_top.svg" alt="">
+    
+                                <span>
+                                  A1
+                                </span>
+                              </div>
+                            </td>
+        
+                            <td>
+                              <div class="type move">
+                                <img src="assets/images/dashboard/location.svg" alt="">
+    
+                                <span>
+                                  E213
+                                </span>
+                              </div>
+                            </td>
+
+                            <td>
+                              ahmed elsayed
+                            </td>
+
+                            <td>
+                              --
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div class="buttons-contain mb-4">
+                    <a href="#" class="btn-submit">
+                      Save
+                    </a>
+
+                    <a href="#" class="btn-submit red-color">
+                      Clear
+                    </a>
+                  </div>
+
+                  <div class="content">
+                    <div class="table-responsive">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>
+                              subject
+                            </th>
+        
+                            <th>
+                              type
+                            </th>
+    
+                            <th>
+                              Date
+                            </th>
+        
+                            <th>
+                              From
+                            </th>
+        
+                            <th>
+                              To
+                            </th>
+                            
+                            <th>
+                              group
+                            </th>
+        
+                            <th>
+                              facility
+                            </th>
+                          </tr>
+                        </thead>
+        
+                        <tbody>
+                          <tr class="gold">
+                            <td>
+                              Quality Assurance of Education
+                            </td>
+        
+                            <td>
+                              <div class="type gold">
+                                <img src="assets/images/dashboard/folder.svg" alt="">
+    
+                                <span>
+                                  Lecture
+                                </span>
+                              </div>
+                            </td>
+
+                            <td>
+                              monday
+                            </td>
+        
+                            <td>
+                              <span class="data gold-color">
+                                12:45
+                              </span>
+                            </td>
+        
+                            <td>
+                              <span class="data gold-color">
+                                12:45
+                              </span>
+                            </td>
+        
+                            <td>
+                              <div class="type blue">
+                                <img src="assets/images/dashboard/align_top.svg" alt="">
+    
+                                <span>
+                                  A1
+                                </span>
+                              </div>
+                            </td>
+        
+                            <td>
+                              <div class="type move">
+                                <img src="assets/images/dashboard/location.svg" alt="">
+    
+                                <span>
+                                  E234
+                                </span>
+                              </div>
+                            </td>
+                          </tr>
+        
+                          <tr>
+                            <td>
+                              Quality Assurance of Education
+                            </td>
+        
+                            <td>
+                              <div class="type gold">
+                                <img src="assets/images/dashboard/folder.svg" alt="">
+    
+                                <span>
+                                  Lecture
+                                </span>
+                              </div>
+                            </td>
+
+                            <td>
+                              monday
+                            </td>
+        
+                            <td>
+                              <span class="data gold-color">
+                                12:45
+                              </span>
+                            </td>
+        
+                            <td>
+                              <span class="data gold-color">
+                                12:45
+                              </span>
+                            </td>
+        
+                            <td>
+                              <div class="type blue">
+                                <img src="assets/images/dashboard/align_top.svg" alt="">
+    
+                                <span>
+                                  A1
+                                </span>
+                              </div>
+                            </td>
+        
+                            <td>
+                              <div class="type move">
+                                <img src="assets/images/dashboard/location.svg" alt="">
+    
+                                <span>
+                                  E234
+                                </span>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- <div class="loading-page">
+      <div class="contain">
+        <div class="wrapper">
+          <div class="inner one"></div>
+          <div class="inner two"></div>
+          <div class="inner three"></div>
+        </div>
+
+        <img src="assets/images/navbar/logo.png" alt="" />
+
+        <h1>
+          Loading ...
+        </h1>
+      </div>
+    </div> -->
+
+    <script src="assets/js/lib/jquery4.js"></script>
+    <script src="assets/js/lib/popper.js"></script>
+    <script src="assets/js/lib/bootstrap.js"></script>
+    <script src="assets/js/lib/owl.carousel.min.js"></script>
+    <script src="assets/js/lib/wow.min.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html> 
